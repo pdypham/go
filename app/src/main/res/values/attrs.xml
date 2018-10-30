@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WozInput">
+        <attr name="style" format="enum">
+            <enum name="editText" value="0"/>
+            <enum name="popupText" value="1"/>
+        </attr>
+
+        <attr name="styleEdit" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="email" value="2"/>
+            <enum name="phone" value="3"/>
+        </attr>
+
+
+
+        <attr name="hintText" format="string"/>
+        <attr name="valueText" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_login"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_login"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_top_content"
+        android:layout_marginStart="@dimen/margin_content"
+        android:layout_marginEnd="@dimen/margin_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/viewIcon"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wozpi"
+                android:layout_gravity="center"
+                style="@style/WozFontTitle"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/viewIcon"
+                >
+                <com.woz.wozpi.Widgets.WozPopupVersion
+                    android:layout_marginTop="10dp"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="V1.25"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="#fff"
+                        android:textSize="10sp"
+                        android:background="@drawable/background_version_top"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <com.woz.wozpi.Widgets.WozInput
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:style="editText"
+                app:styleEdit="email"
+                />
+
+
+            <com.woz.wozpi.Widgets.WozInput
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:style="editText"
+                app:styleEdit="phone"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="#55ffffff"
+                    android:padding="6dp"
+                    android:background="@drawable/background_woz_input"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/background_login"
+                        android:inputType="textPassword"
+                        android:text="@string/background_login"
+                        android:textColor="#fff"
+                        android:textColorHint="#82ffffff"
+                        android:textSize="14sp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:background="@android:color/transparent"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Login"
+                android:textColor="#fff"
+                android:background="@drawable/background_woz_button"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:background="#fff"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:background="#fff"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Register"
+                android:textColor="#fff"
+                android:background="@drawable/background_woz_button_glass_white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Forgot yout password ?"
+    android:textColor="#fff"
+    android:textSize="14sp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="10dp"
+    />
+
+</RelativeLayout>

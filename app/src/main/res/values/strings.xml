@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wozpi</string>
+    <string name="background_login">Background Login</string>
+    <string name="hint_default_woz_input">enter something</string>
+    <string name="value_error_email">Please enter an email address</string>
+    <string name="value_error_phone">Please enter a phone number</string>
+    <string name="value_error_password">Password at least 5 characters</string>
+</resources>
